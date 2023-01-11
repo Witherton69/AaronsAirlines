@@ -10,14 +10,45 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("AARON'S AIRLINES")
+                .font(.title)
+                .foregroundColor(Color.blue)
+                .bold()
+            ZStack {
+                Image("airplane")
+                    .resizable()
+                    .frame(width: 400, height: 500)
+                
+                Text("Come Fly With Us")
+                    .foregroundColor(Color.white)
+                    .font(.title)
+            }
+            HStack {
+                Spacer()
+                Button("Book a Flight") {
+                    
+                }
+                .bold()
+                Spacer()
+                Button("Flight Status") {
+                    
+                }
+                .bold()
+                Spacer()
+                Button("Check In") {
+                    
+                }
+                .bold()
+                Spacer()
+                
+                
+            }
         }
-        .padding()
     }
-}
+    
+   
+    }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
